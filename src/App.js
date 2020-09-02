@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import {BrowserRouter as Router,Route,Link,Switch} from 'react-router-dom'
 import './App.css';
+import Home from '../src/Pages/Home/Home'
+import NavBar from './Components/NavBar/NavBar';
+import EventsList from './Pages/events/EventsList';
+import EventDetail from './Pages/events/EventDetail';
+import DonorRegistration from './Pages/Registration/DonorRegistration';
+import RequestorForm from './Pages/Registration/RequestorForm'
+import Section7 from './Components/Sections/Section7';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+       <NavBar/>
+       <Switch>
+       <Route exact path="/" component={Home}/>
+       <Route path="/donateForm" component={DonorRegistration}/>
+       <Route path="/requestForm" component={RequestorForm}/>
+       <Route path="/eventlists" component={EventsList}/>
+       <Route path="/event/:id" component={EventDetail}/>
+       </Switch>
+      
+      </div>
+      </Router>
   );
 }
 

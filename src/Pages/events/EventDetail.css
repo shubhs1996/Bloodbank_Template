@@ -1,0 +1,69 @@
+.eventdetail_container {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:300px;
+    margin-top:30px;
+    /* background-color: indigo; */
+}
+
+.eventdetail_title {
+width:100%;
+min-height:50px;
+text-align: center;
+font-size: 40px;
+text-decoration:underline ;
+/* background-color: khaki; */
+}
+
+.eventdetail_info_container {
+width:90%;
+min-height:400px ;
+margin-top: 20px;
+/* background-color: rgb(214, 65, 182); */
+}
+
+.eventdetail_detailTitle_detail_container,.eventdetail_venueTitle_venue_container,.eventdetail_timingTitle_timing_container,.eventdetail_organiserTitle_organiser_container,.eventdetail_dateTitle_date_container {
+width:100%;
+min-height: 100px;
+display: flex;
+justify-content:flex-end;
+/* background-color: lawngreen; */
+margin-top:20px;
+}
+
+.eventdetail_detailtitle,.eventdetail_venuetitle,.eventdetail_timingtitle,.eventdetail_organisertitle,.eventdetail_datetitle {
+min-width:10%;
+height:100%;
+font-size: 25px;
+padding:10px;
+text-align: center;
+/* background-color: lightcoral; */
+}
+
+
+.eventdetail_detail,.eventdetail_venue,.eventdetail_timing,.eventdetail_organiser,.eventdetail_date {
+
+width:90%;
+height:100%;
+font-size:20px;
+font-weight:300;
+padding:10px;
+/* background-color: lightskyblue; */
+}
+
+
+@media only screen and (max-width:750px) {
+
+    .eventdetail_detailTitle_detail_container,.eventdetail_venueTitle_venue_container,.eventdetail_timingTitle_timing_container,.eventdetail_organiserTitle_organiser_container,.eventdetail_dateTitle_date_container {
+        flex-direction: column;
+
+    }
+
+    .eventdetail_detail,.eventdetail_venue,.eventdetail_timing,.eventdetail_organiser,.eventdetail_date {
+        width:95%;
+        text-align: justify;
+
+    }
+}
