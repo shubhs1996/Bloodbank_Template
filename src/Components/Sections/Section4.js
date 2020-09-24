@@ -8,16 +8,10 @@ import EligibilityImage from '../Sub-components/EligibilityImage';
 
 function Section4() {
 
-  // const [type, setType] = useState('desktop')
   const [check,setCheck]=useState(false)
   const [eligible,setEligible]=useState(null);
 
-  // const reportWindowSize = () => {
-  //   window.innerWidth > 749 ? setType('desktop') : setType('mobile');
-  // }
-
-  // window.onresize = reportWindowSize;
-
+  
  const onCheckHandler =()=>{
    setCheck(true)
  }

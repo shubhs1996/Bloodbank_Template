@@ -52,9 +52,9 @@ function NavBar() {
                     </div>
                     
                     <div className="section0_dropdown-content" style={{display:display}}>
-                    <h3>Home</h3>
-                    <h3>Events</h3>
-                    <h3>About</h3>
+                    <Link to={'/'} className="dropdown_link"><h3>Home</h3></Link>
+                    <Link to={'/eventlists'} className="dropdown_link"> <h3>Events</h3></Link>
+                    <Link to={'#'} className="dropdown_link"><h3>About</h3></Link>
                     <div className="section0_navbar_options_div">
                         <h3>Donate</h3>
                     </div>
@@ -65,15 +65,7 @@ function NavBar() {
 
 
             </div>
-            {/* <div className="navbar_options_mobileView" >
-                    <h3>Home</h3>
-                    <h3>Events</h3>
-                    <h3>About</h3>
-                    <div className="navbar_options_mobileView_div">
-                        <h3>Donate</h3>
-                    </div>
-    </div>*/}
-
+           
 
 
         </div>

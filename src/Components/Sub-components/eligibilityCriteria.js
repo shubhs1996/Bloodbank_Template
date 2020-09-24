@@ -5,6 +5,7 @@ function EligibilityCriteria() {
         <div className="section4_eligibility_container">
             <div className="section4_eligibility_caption">Who can donate!</div>
             <div className="section4_eligibility_criteria">
+            
               <ul type="none">
                 <li>The donor must be fit and healthy, and should not be suffering from transmittable diseases.</li>
                 <li>The donor must be 18–65 years old and should weigh a minimum of 50  kg.</li>

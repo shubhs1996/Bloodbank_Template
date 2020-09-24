@@ -7,6 +7,7 @@ function NonEligibilityCriteria() {
           who can't donate!
    </div>
         <div className="section4_non_eligibility_criteria">
+        {/*eligibity  points */}
           <ul type="none">
             <li>A person who has been tested HIV positive.</li>
             <li>Individuals suffering from ailments like cardiac arrest, hypertension, blood pressure, cancer, epilepsy, kidney ailments and diabetes.</li>

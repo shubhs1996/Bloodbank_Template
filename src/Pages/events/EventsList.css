@@ -1,7 +1,7 @@
 .eventslist_container {
 
     width:90%;
-    /* border:1px solid black; */
+   
     min-height:600px;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@
 .eventslist_title {
     font-size: 30px;
     padding:15px;
-    /* background-color: hotpink; */
+  
 }
 
 
@@ -23,7 +23,7 @@
     margin-top:30px;
     font-size: 20px;
     padding:15px;
-/* background-color: indigo; */
+
 }
 
 .eventslist_lists >ul> li {

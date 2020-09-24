@@ -18,7 +18,7 @@ export default class EligibilityForm extends Component {
         }
     }
 
-
+//change handler
     onChangeHandler = (e) => {
         this.setState({
             ...this.state,
@@ -26,6 +26,8 @@ export default class EligibilityForm extends Component {
         })
     }
 
+
+//submit handler
     onSubmitHandler = (e) => {
         e.preventDefault()
         if (this.validator.allValid()) {
@@ -53,7 +55,7 @@ export default class EligibilityForm extends Component {
                         <div className="section4_eligibility_form_group">
                             <label>Any transmittable diseases :</label>
                             <input type="text" className="section4_eligibility_form_control" id="anyDiseases" placeholder="Enter Yes or No" onChange={this.onChangeHandler} />
-                            {this.validator.message('', this.state.anyDiseases, 'required|in:yes,no')}
+                            {this.validator.message('', this.state.anyDiseases, 'required|in:Yes,No')}
                         </div>
                         <div className="section4_eligibility_form_group">
                             <label>Enter your age :</label>
@@ -73,7 +75,7 @@ export default class EligibilityForm extends Component {
                         <div className="section4_eligibility_form_group">
                             <label>Enter your body temp in Celsius (approx)</label>
                             <input type="number" className="section4_eligibility_form_control" id="temp" placeholder="Body temp" onChange={this.onChangeHandler} />
-                            {this.validator.message('', this.state.temp, 'required|between:30,48')}
+                            {this.validator.message('', this.state.temp, 'required|between:34,48')}
                         </div>
                         <div className="section4_eligibility_form_group">
                             <label>Your hemoglobin level</label>

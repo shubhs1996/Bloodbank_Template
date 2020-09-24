@@ -34,7 +34,7 @@ onChangeHandler=(e)=>{
 onSubmitHandler = (e) => {
     e.preventDefault()
     if (this.validator.allValid()) {
-      
+      console.log('form submitted')
 } else {
         this.validator.showMessages();
         this.forceUpdate();
@@ -45,6 +45,7 @@ onSubmitHandler = (e) => {
     render() {
         return (
             <div className="donorregistration_container">
+            {/*instructions to how to request for blood */}
                 <div className="donor_registration_instruction">
                     <p> How will it works?</p>
                     <div className="donor_registration_steps">

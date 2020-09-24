@@ -5,7 +5,7 @@
     flex-direction:column;
     justify-content: space-around;
     align-items: center;
-/* background-color: orange; */
+
 }
 
 .section4_line {
@@ -18,11 +18,11 @@
 
 .section4_caption {
     margin-top:30px;
-   font-size: 50px;
+   font-size:4vw;
    font-weight: 500px;
    margin-bottom: 30px;
    text-shadow:1px 3px gray;
-   /* background-color: red; */
+   
 }
 
 .section4_info_container {
@@ -32,7 +32,7 @@
     grid-template-areas:
     "eligible non-eligible form"
     ;
-    /* background-color: lawngreen;  */
+    
 }
 
 
@@ -41,7 +41,7 @@
     grid-area:eligible;
     align-items: center;
     padding:20px;
-    /* background-color: violet; */
+  
 }
 
 .section4_eligibility_container,.section4_non_eligibility_container,.section4_eligibilityImage_image_container,.section4_eligibility_form_container  {
@@ -50,14 +50,14 @@
     padding:10px;
     border-radius: 10px;
    box-shadow: 0px 0px 5px 0px red;
-   /* background-color: blue; */
+ 
 
 
    
 }
 
 .section4_eligibility_form_container {
-    /* background-color: tan; */
+   
     
    }
 
@@ -67,13 +67,13 @@
     font-size: 25px;
     font-weight: 500;
     color:red; 
-    /* background-color: lawngreen; */
+    
 }
 
 .section4_eligibility_criteria,.section4_non_eligibility_criteria {
     text-align: justify;
     margin-top:30px;
-     /* background-color: lawngreen; */
+    
 }
 
 .section4_eligibility_criteria >ul >li,.section4_non_eligibility_criteria > ul > li {
@@ -84,7 +84,7 @@
    
     grid-area: non-eligible;
     padding:20px;
-    /* background-color: yellowgreen; */
+  
 
 }
 
@@ -94,17 +94,17 @@
     align-items: center;
     padding:20px;
     grid-area: form;
-    /* background-color: tomato; */
+  
 }
 
 .section4_eligibility_form_container {
     width:100%;    
-    /* background-color:orange; */
+   
 }
 
 
 .section4_eligibility_form_inputs {
-    /* background-color: violet; */
+   
     width:80%;
     margin:auto;
     padding:20px;
@@ -115,11 +115,11 @@
   margin-top:20px ;
   display:flex;
   flex-direction: column;
-  /* background-color: tomato; */
+ 
   color:rgb(29, 27, 27);
 }
 
-/* .section4_eligibility_form_group > label {} */
+
 
 .section4_eligibility_form_control {
     height:20px;
@@ -137,14 +137,15 @@
     width:50%;
     height:40px;
     color:white;
-    font-size: 20px;
     border:none;
     background-color: red;
     border-radius: 10px;
   margin-left:25%;
-    /* margin-top:20px; */
+    
 
 }
+
+
 
 .section4_eligibilityImage_image_container {
     display:flex;
@@ -153,29 +154,33 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color:tan; */
+ 
 
 }
 
 .section4_eligibilityImage_image {
-    width:50%;
-   height:200px;
-   background-color: tomato;
+   width:20vw;
+   height:35vh;
+   /* background-color: tomato; */
 }
 
 .section4_eligibilityImage_image_style {
    width:100%;
    height:100%;
+   margin-bottom: 10px;
 }
 
 .section4_eligibilityImage_button_container { 
 width:40%;
 height:30px;
+display: flex;
+justify-content: center;
+align-items: center;
 margin-top:20px;
 border-radius: 8px;
+font-size:80%;
 overflow: hidden;
 border:2px solid red;
-/* background-color: red;; */
 
 }
 
@@ -206,7 +211,7 @@ color:red;
     "non-eligible"
     "form"
     ;
-    /* background-color: lawngreen; */
+   
     }
     
 
